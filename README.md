@@ -26,3 +26,19 @@ git clone https://github.com/so07/TCCM-DL-2022.git
 cd TCCM-DL-2022
 jupyter notebooks
 ```
+
+## How to run notebooks on a cluster
+
+open a ssh tunnel from local machine to compute node
+
+```
+ssh -L 9999:localhost:9999 LOGIN_NODE ssh -L 9999:localhost:9999 COMPUTE_NODE
+```
+
+run notebook on the compute node
+
+```
+cd TCCM-DL-2022
+jupyter notebook --port=9999 --no-browser
+```
+
