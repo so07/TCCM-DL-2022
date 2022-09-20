@@ -42,3 +42,13 @@ cd TCCM-DL-2022
 jupyter notebook --port=9999 --no-browser
 ```
 
+## How to load environment @M100
+
+```
+module load autoload profile/deeplrn cineca-ai
+
+python -m venv venv --system-site-packages
+
+source venv/bin/activate
+```
+
