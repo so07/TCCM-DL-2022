@@ -32,7 +32,7 @@ jupyter notebooks
 open a ssh tunnel from local machine to compute node
 
 ```
-ssh -L 9999:localhost:9999 LOGIN_NODE ssh -L 9999:localhost:9999 COMPUTE_NODE
+ssh -L 9999:localhost:9999 USERNAME@LOGIN_NODE ssh -L 9999:localhost:9999 COMPUTE_NODE
 ```
 
 run notebook on the compute node
