@@ -52,3 +52,10 @@ python -m venv venv --system-site-packages
 source venv/bin/activate
 ```
 
+## How to install requirements
+
+```
+pip install -r requirements.txt
+```
+
+
