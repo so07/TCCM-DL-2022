@@ -27,21 +27,13 @@ cd TCCM-DL-2022
 jupyter notebooks
 ```
 
-## How to run notebooks on a cluster
+# How to run notebooks on a cluster
 
 open a ssh tunnel from local machine to compute node
 
 ```
-ssh -L 9999:localhost:9999 LOGIN_NODE ssh -L 9999:localhost:9999 COMPUTE_NODE
+ssh -L 9999:localhost:9999 USERNAME@LOGIN_NODE
 ```
-
-run notebook on the compute node
-
-```
-cd TCCM-DL-2022
-jupyter notebook --port=9999 --no-browser
-```
-
 ## How to load environment @M100
 
 ```
@@ -50,5 +42,11 @@ module load autoload profile/deeplrn cineca-ai
 python -m venv venv --system-site-packages
 
 source venv/bin/activate
+
+pip install notebook
 ```
 
+```
+cd TCCM-DL-2022
+jupyter notebook --port=9999 --no-browser
+```
